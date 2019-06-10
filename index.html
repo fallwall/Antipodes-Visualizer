@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title> Antipodes Visualizer </title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script defer src="script.js"></script>
+
+  <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Check the Antipode</h1>
+  </header>
+  <input type="text" placeholder="i.e. London, UK">
+  <button>See the Antipodes</button>
+  <div id="map">
+    <div id="embeddedmap-display" style="height:100%; width:100%;max-width:100%;"><iframe
+        style="height:100%;width:100%;border:0;" frameborder="0"
+        src="https://www.mapquest.com/embed/latlng/51.5211,0.1166?center=51.5211,0.11660000000000448&zoom=13&maptype=map"></iframe>
+    </div>
+
+  </div>
