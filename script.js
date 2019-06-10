@@ -1,5 +1,4 @@
-// const PATH = "https://crossorigin.me/https://maps.googleapis.com/maps/api/geocode/json?"
-const API_KEY = "AIzaSyDqiRMEOLbJ-TjANFLP3-3GZtsx-YkEQYs";
+
 
 const O_PATH = "https://api.opencagedata.com/"
 const O_API_KEY = "38336e1de3a147a7b157ab7dcc5d27a6";
@@ -11,17 +10,7 @@ const iframe = document.querySelector("iframe");
 
 
 
-// //Google Maps
-// button.addEventListener("click", async () => {
-//   const searchname = input.value.split(" ").join("+");
-//   console.log(searchname)
-//   const response = await axios.get(`${PATH}?address=${searchname}&key=${API_KEY})`);
-//   console.log(response);
-//   const lat = response.results.geometry.location.lat;
-//   const lng = response.results.geometry.location.lat;
-//   console.log(lat, lng);
-// })
-//convert coordinates 
+
 const lgnConvert = (lgn) => {
   if (lgn > 0) {
     return lgn - 180;
