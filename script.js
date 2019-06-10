@@ -15,7 +15,7 @@ button.addEventListener("click", async () => {
   const coordinates = response.data.features[0].geometry.coordinates;
   let lng = coordinates[0];
   let lat = coordinates[1]
-  const lngConvert = (lgn) => {
+  const lngConvert = (lng) => {
     if (lng > 0) {
       return lng - 180;
     } else {
