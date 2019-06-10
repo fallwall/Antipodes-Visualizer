@@ -2,9 +2,62 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: rgb(218, 194, 229);
+  color: white;
 }
 
 #map {
   top: 40%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
+  text-align: center;;
+}
+
+
+header, input {
+  left:20%;
+  position: absolute;
+}
+button {
+  left: 35%;
+  position: absolute;
+}
+
+/* arrow stuff */
+.arrowup, .arrowdown {
+  text-align: center;
+  margin: 8% 0;
+  color: white;
+  left: 45%;
+  z-index: 2;
+  font-size: 40px;
+}
+.arrowup:hover {
+  animation: arrowup 2s;
+}
+.arrowdown:hover {
+  animation: arrowdown 2s;
+}
+
+@keyframes arrowup {
+  0, 100%, 20% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(15px);
+  }
+  98% {
+    transform: translateY(-1px);
+  }
+}
+@keyframes arrowdown {
+  0, 100%, 20% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-15px);
+  }
+  98% {
+    transform: translateY(1px);
+  }
 }

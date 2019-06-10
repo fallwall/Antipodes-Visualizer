@@ -7,22 +7,49 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title> Antipodes Visualizer </title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <script defer src="script.js"></script>
+  <!-- Mapbox -->
+  <script defer src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.js'></script>
 
+  <div id='map'></div>
+  <script defer src="script.js"></script>
+  <link rel='stylesheet' href='main.css'>
   <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
+
+
+  <div class="arrowup">
+    &uarr;
+  </div>
+
   <header>
     <h1>Check the Antipode</h1>
   </header>
-  <input type="text" placeholder="i.e. London, UK">
+  <input type="text" placeholder="i.e. Christchurch, New Zealand">
   <button>See the Antipodes</button>
-  <div id="map">
-    <div id="embeddedmap-display" style="height:100%; width:100%;max-width:100%;"><iframe
-        style="height:100%;width:100%;border:0;" frameborder="0"
+
+
+  <!-- mapbox stuff -->
+
+  <script
+    src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.3.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet'
+    href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.3.0/mapbox-gl-geocoder.css'
+    type='text/css' />
+  <div id='map'></div>
+  <!-- <div id='map'></div> -->
+  <!-- <div id="map">
+    <div id="embeddedmap-display"><iframe style="height:100%;width:100%;border:0;" frameborder="0"
         src="https://www.mapquest.com/embed/latlng/51.5211,0.1166?center=51.5211,0.11660000000000448&zoom=13&maptype=map"></iframe>
-    </div>
+    </div> -->
+
+  <div class="arrowdown">
+    &#8595;
+  </div>
+
+
 
   </div>
