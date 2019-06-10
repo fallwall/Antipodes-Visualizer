@@ -7,12 +7,23 @@ html, body {
 }
 
 /* map hell*/
-#map {
-  top: 40%;
+#map, #map1 {
+
   width: 60%;
   height: 60%;
-  text-align: center;;
+  text-align: center;
 }
+
+/*nav*/
+nav {
+background: white;
+position: sticky;
+top:0;
+left:0;
+width: 30px;
+height: 100%;
+}
+
 
 /* input area */
 header {
@@ -30,26 +41,35 @@ input {
   border-radius: 5px;
   padding: 5px;
   box-shadow:5px 2.5px 2.5px grey;
-  width: 150px;
+  width: 175px;
   font-size: 20px;
 }
 button {
   left: 35%;
+  color: pink;
   position: absolute;
   border: none;
   border-radius: 5px;
   box-shadow: 5px 2.5px 2.5px grey;
   padding: 5px;
   font-size: 20px;
+  animation: buttonmov 1s ease-out .8s;
 }
 button:hover {
   background: pink;
   color: white;
-  animation: buttonmov:
+  animation: buttonmov 1s ease-out .8s;
 }
   
 
 
+/* invisible pair: want to make the arrow into toggle class thing, not important*/
+.pairs {
+  display: none;}
+
+.pairsshow {
+  display: block;
+}
 
 
 /* arrow stuff */
@@ -95,4 +115,13 @@ button:hover {
 
 /* button animation */
 @keyframes buttonmov {
+  0%{
+    opacity:0;
+    transform:translateY(10px);
+  }
+  100%{
+    opacity:1;
+    transform: scaleX(1.1) scaleY(1.1);
+  }
+
 }

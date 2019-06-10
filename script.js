@@ -26,6 +26,13 @@ button.addEventListener("click", async () => {
   antlat = -lat;
   antlng = lngConvert(lng);
 
+  // var map1 = new mapboxgl.Map({
+  //   container: 'map',
+  //   style: 'mapbox://styles/mapbox/streets-v11',
+  //   center: [lng, lat],
+  //   zoom: 2
+  // });
+
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
