@@ -26,11 +26,13 @@ nav {
   background-image: url("coverblack.gif");
   background-size: cover;
   position: relative;
+  border-radius: 20px;
 }
 #map img {
   opacity: 0.1;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 canvas.mapboxgl-canvas {
@@ -38,6 +40,7 @@ canvas.mapboxgl-canvas {
   left: 0;
   top: 0;
 }
+
 #input-section {
   text-align: center;
 }
@@ -46,7 +49,7 @@ input {
   border-radius: 5px;
   padding: 5px;
   box-shadow:5px 2.5px 2.5px grey;
-  width: 200px;
+  width: 400px;
   font-size: 20px;
   font-family: 'Ultra', serif;
 }
@@ -63,7 +66,10 @@ button {
 button:hover {
   background: pink;
   color: white;
-  animation: buttonmov 1s ease-out .8s;
+}
+
+#exp {
+  font-size: 20px;
 }
   
 /* arrow stuff */
