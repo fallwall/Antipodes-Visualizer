@@ -23,36 +23,38 @@
   <!-- nav toggle-->
   <nav class="sidebar"></nav>
 
-  <!-- upper arrow -->
-  <div class="arrowup">
-    &uarr;
+
+  <div class="wrapper">
+    <!-- upper arrow -->
+    <div class="arrowup">
+      &uarr;
+    </div>
+
+    <!-- header: need to be more exciting -->
+    <header>
+      <h1>Check the Antipode</h1>
+    </header>
+
+
+    <!-- input field and button -->
+    <input type="text" placeholder="i.e. Christchurch, New Zealand">
+    <button>See the Antipodes</button>
+
+
+    <!-- mapbox stuff -->
+    <script
+      src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.3.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet'
+      href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.3.0/mapbox-gl-geocoder.css'
+      type='text/css' />
+    <!-- <div id='map1'></div> -->
+    <div id='map'></div>
+
+    <!-- down arrow -->
+    <div class="arrowdown">
+      &#8595;
+    </div>
   </div>
-
-  <!-- header: need to be more exciting -->
-  <header>
-    <h1>Check the Antipode</h1>
-  </header>
-
-
-  <!-- input field and button -->
-  <input type="text" placeholder="i.e. Christchurch, New Zealand">
-  <button>See the Antipodes</button>
-
-
-  <!-- mapbox stuff -->
-  <script
-    src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.3.0/mapbox-gl-geocoder.min.js'></script>
-  <link rel='stylesheet'
-    href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.3.0/mapbox-gl-geocoder.css'
-    type='text/css' />
-  <div id='map1'></div>
-  <div id='map'></div>
-
-  <!-- down arrow -->
-  <div class="arrowdown">
-    &#8595;
-  </div>
-
   <!-- list of interesting antipodes pair -->
   <div class="pairs"></div>
   <!-- <ul> -->
