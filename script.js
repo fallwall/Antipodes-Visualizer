@@ -27,12 +27,7 @@ button.addEventListener("click", async () => {
   antlat = -lat;
   antlng = lngConvert(lng);
 
-  // var map1 = new mapboxgl.Map({
-  //   container: 'map',
-  //   style: 'mapbox://styles/mapbox/streets-v11',
-  //   center: [lng, lat],
-  //   zoom: 2
-  // });
+
 
   var map = new mapboxgl.Map({
     container: 'map',
@@ -41,15 +36,7 @@ button.addEventListener("click", async () => {
     zoom: 2
   });
 
-  // var map1 = new mapboxgl.Map({
-  //   container: 'map',
-  //   style: 'mapbox://styles/mapbox/streets-v11',
-  //   center: [lng, lat],
-  //   zoom: 2
-  // });
-  // originalmap.append(map1);
 
-  // map.addControl(new mapboxgl.NavigationControl());
 
   map.loadImage('https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cat_silhouette.svg/400px-Cat_silhouette.svg.png', function (error, image) {
     if (error) throw error;
