@@ -6,6 +6,7 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const noise = document.querySelector("#noise");
 const description = document.querySelector("#exp");
+const nav = document.querySelector("nav");
 
 
 //button event listener begins
@@ -31,7 +32,7 @@ button.addEventListener("click", async () => {
   //below: second API call from antipodes' coordinates;
   const antresponse = await axios.get(`${path}${antlng},${antlat}.json?types=country&access_token=${mapboxgl.accessToken}`);
   console.log(antresponse);
-  const countryname = antresponse.data.features;   ///return the array of into, could be none
+  const countryname = antresponse.data.features;   ///return the array of inf or empty array
   let countryitem;
   /// if location is not in a specific country
   if (countryname.length) {     //empty array returns 0;
@@ -90,6 +91,28 @@ button.addEventListener("click", async () => {
   });
   input.value = "";
 });
+
+//click nav
+nav.addEventListener("click", () => {
+  const popup = document.createElement("div");
+  popup.setAttribute("id", "popup");
+  popup.innerHTML = `explain the pronunciation of antipode here.
+  explain the pronunciation of antipode here.
+  explain the pronunciation of antipode here.
+  explain the pronunciation of antipode here.
+  explain the pronunciation of antipode here.
+  explain the pronunciation of antipode here.
+  explain the pronunciation of antipode here.
+  explain the pronunciation of antipode here.
+  explain the pronunciation of antipode here.
+  explain the pronunciation of antipode here.
+  explain the pronunciation of antipode here.
+  explain the pronunciation of antipode here.
+  `
+  document.body.append(popup);
+
+  popup.addEventListener("click", () => { popup.remove(); })
+})
 
 
 
