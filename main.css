@@ -26,6 +26,7 @@ nav:hover {
   color: pink;
 }
 
+
 #popup {
   background-color: rgba(0,0,0,0.7);
   height: 100vh;
@@ -91,7 +92,7 @@ input {
   font-family: 'Ultra', serif;
 }
 button {
-  color: pink;
+  color: black;
   border: none;
   border-radius: 5px;
   box-shadow: 5px 2.5px 2.5px grey;
@@ -121,19 +122,19 @@ button:hover {
 
 /* credit box */
 .creditbox {
-    background-color: rgba(0,0,0,0);
-    color: black;
-    margin: 0 auto;
-    min-width: 210px;
-    width: 8%;
-    height: 20%;
-    padding: 40px;
-    margin-top: 100px;
-    position:fixed;
-    bottom: 0;
-    right:5%;
-    z-index: 300;
-    background-image: url("popup.png");
+  background-color: rgba(0,0,0,0);
+  color: black;
+  margin: 0 auto;
+  min-width: 210px;
+  width: 8%;
+  height: 20%;
+  padding: 40px;
+  margin-top: 100px;
+  position:fixed;
+  bottom: 0;
+  right:5%;
+  z-index: 300;
+  background-image: url("popup.png");
     /* background-size: cover; */
     background-size: 100% 100%;
     opacity: 0.5;
@@ -142,6 +143,15 @@ button:hover {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     }
+
+.creditbox a {
+    text-decoration: none;
+    color:black;
+  }
+.creditbox a:hover {
+    color:white;
+}
+
   
 /* button animation */
 @keyframes buttonmov {
@@ -177,6 +187,9 @@ button:hover {
 
   /*media query*/
   @media (max-width: 450px) {
+    body, html {
+      overflow:visible;
+    }
     .wrapper {
       width: 100%;
     }
@@ -189,4 +202,5 @@ button:hover {
     #input-section {
       display: block;
     }
+
   }

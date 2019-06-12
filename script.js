@@ -61,7 +61,7 @@ button.addEventListener("click", async () => {
   globe.addEventListener("click", () => {
     const creditbox = document.createElement("div");
     creditbox.setAttribute("class", "creditbox");
-    creditbox.innerHTML = `<p>By Tibby for GA-SEI-pandas. Powered by Mapbox API.</p>`
+    creditbox.innerHTML = `<a href="#">    x</a> <br><p>By Tibby for GA-SEI-pandas. Powered by Mapbox API.</p>`
     document.body.append(creditbox);
     creditbox.addEventListener("click", () => {
       creditbox.remove();
@@ -116,12 +116,15 @@ nav.addEventListener("click", () => {
   const popup = document.createElement("div");
   popup.setAttribute("id", "popup");
   popup.innerHTML = `
+  <br>
+  <br>
+  <br>
   <h2>THE PRONUNCIATION</h2>
   <h3><a href="https://www.dictionary.com/browse/antipode">Antipode Antipodes</a></h3>
   <h2>ANTIPODAL CITIES</h2>
   <ul>
   <li>Christchurch (New Zealand) — A Coruña (Spain)</li>
-  <li>Levin (New Zealand) - Ávila (Spain)</li>
+  <li>Levin (New Zealand) — Ávila (Spain)</li>
   <li>Hamilton (New Zealand) — Córdoba (Spain)</li>
   <li>Hong Kong — La Quiaca (Argentina)</li>
   <li>Lianyungang (China) — Junín (Argentina)</li>
