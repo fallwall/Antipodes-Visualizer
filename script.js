@@ -53,8 +53,25 @@ button.addEventListener("click", async () => {
   That's ${countryUpper}.
   `
   globe.setAttribute("src", "globe.png");
+  globe.setAttribute("title", "Click Me!");
   description.append(desc);
   description.append(globe);
+
+  ///credit box upon click of globe
+  globe.addEventListener("click", () => {
+    const creditbox = document.createElement("div");
+    creditbox.setAttribute("class", "creditbox");
+    creditbox.innerHTML = `<p>By Tibby for GA-SEI-pandas. Powered by Mapbox API.</p>`
+    document.body.append(creditbox);
+    creditbox.addEventListener("click", () => {
+      creditbox.remove();
+    })
+  })
+
+
+
+
+
 
   ///mapbox stuff;
   var map = new mapboxgl.Map({
