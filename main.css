@@ -76,6 +76,7 @@ canvas.mapboxgl-canvas {
   top: 0;
 }
 
+/* input field */
 #input-section {
   text-align: center;
 }
@@ -146,8 +147,12 @@ button:hover {
     75% {
       transform: tranlateY(-20px) rotate(0deg)
     }
-    
-    /* 100%{
-        transform:rotate(360deg)
-    } */
+  }
+
+
+  /*media query*/
+  @media (max-width: 450px) {
+    nav, #exp img {
+      display: none;
+    }
   }
