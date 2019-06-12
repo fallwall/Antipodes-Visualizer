@@ -39,6 +39,10 @@ nav:hover {
   letter-spacing: 0.2em;
 }
 
+#popup h2 {
+  font-size: 30px;
+}
+
 #popup ul li {
   list-style-type: none;
 }

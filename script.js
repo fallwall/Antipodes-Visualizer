@@ -53,11 +53,9 @@ button.addEventListener("click", async () => {
   That's ${countryUpper}.
   `
   globe.setAttribute("src", "globe.png");
-  globe.setAttribute("title", "&#169; Copyright 2019 Tibby Xu ");
+  globe.setAttribute("title", " Copyright 2019 Tibby Xu ");
   description.append(desc);
   description.append(globe);
-
-
 
   ///mapbox stuff;
   var map = new mapboxgl.Map({
