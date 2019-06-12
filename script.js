@@ -47,12 +47,15 @@ button.addEventListener("click", async () => {
   const placename = input.value.toUpperCase();
   const countryUpper = countryitem.toUpperCase();
   ///display antipode's info in text
-  const desc = document.createElement("div");
+  const desc = document.createElement("div");   //text info
+  const globe = document.createElement("img");  //rorating globe
   desc.innerHTML = `<br>
   The antipode of ${placename} is (${antlat3}, ${antlng3}). <br>
   That's ${countryUpper}.
   `
+  globe.setAttribute("src", "globe.png");
   description.append(desc);
+  description.append(globe);
 
   ///mapbox stuff;
   var map = new mapboxgl.Map({
@@ -98,8 +101,7 @@ nav.addEventListener("click", () => {
   popup.setAttribute("id", "popup");
   popup.innerHTML = `
   <h2>THE PRONUNCIATION</h2>
-  <h3>Antipode</h3>
-  <h3>Antipodes</h3>
+  <h3><a href="https://www.dictionary.com/browse/antipode">Antipode Antipodes</a></h3>
   <h2>ANTIPODAL CITIES</h2>
   <ul>
   <li>Christchurch (New Zealand) — A Coruña (Spain)</li>
@@ -109,8 +111,8 @@ nav.addEventListener("click", () => {
   <li>Lianyungang (China) — Junín (Argentina)</li>
   <li>Madrid (Spain) — Weber (New Zealand)</li>
   </ul>
-  <h2>Read more on Wikipedia...<h2>
-  <h3>No, you can't dig to China.</h3>
+  <h2>Read more on <a href="https://en.wikipedia.org/wiki/Antipodes">Wikipedia</a>...<h2>
+  <h3>And, no, you can't <a href="https://www.atlasobscura.com/articles/the-hole-truth-about-why-we-dig-to-china">dig to China</a>.</h3>
   `
   document.body.append(popup);
 
