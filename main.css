@@ -152,7 +152,16 @@ button:hover {
 
   /*media query*/
   @media (max-width: 450px) {
+    .wrapper {
+      width: 100%;
+    }
     nav, #exp img {
       display: none;
+    }
+    input {
+      width: 200px;
+    }
+    #input-section {
+      display: block;
     }
   }

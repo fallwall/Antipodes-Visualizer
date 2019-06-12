@@ -31,7 +31,6 @@ button.addEventListener("click", async () => {
   antlng = lngConvert(lng); //antipode's longitude 
   //below: second API call from antipodes' coordinates;
   const antresponse = await axios.get(`${path}${antlng},${antlat}.json?types=country&access_token=${mapboxgl.accessToken}`);
-  console.log(antresponse);
   const countryname = antresponse.data.features;   ///return the array of inf or empty array
   let countryitem;
   /// if location is not in a specific country
