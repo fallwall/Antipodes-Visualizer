@@ -117,50 +117,6 @@ button:hover {
   animation-timing-function: linear;
 }
   
-/* arrow stuff */
-.arrowup {
-background: red;
-}
-.arrowdown {
-  background: red;
-}
-.arrowup, .arrowdown {
-  text-align: center;
-  margin: 8% 0;
-  color: white;
-  left: 45%;
-  z-index: 2;
-  font-size: 40px;
-}
-.arrowup:hover {
-  animation: arrowup 2s;
-}
-.arrowdown:hover {
-  animation: arrowdown 2s;
-}
-/* arrow animation */
-@keyframes arrowup {
-  0, 100%, 20% {
-    transform: translateY(0);
-  }
-  80% {
-    transform: translateY(15px);
-  }
-  98% {
-    transform: translateY(-1px);
-  }
-}
-@keyframes arrowdown {
-  0, 100%, 20% {
-    transform: translateY(0);
-  }
-  80% {
-    transform: translateY(-15px);
-  }
-  98% {
-    transform: translateY(1px);
-  }
-}
 /* button animation */
 @keyframes buttonmov {
   0%{
