@@ -96,18 +96,21 @@ button.addEventListener("click", async () => {
 nav.addEventListener("click", () => {
   const popup = document.createElement("div");
   popup.setAttribute("id", "popup");
-  popup.innerHTML = `explain the pronunciation of antipode here.
-  explain the pronunciation of antipode here.
-  explain the pronunciation of antipode here.
-  explain the pronunciation of antipode here.
-  explain the pronunciation of antipode here.
-  explain the pronunciation of antipode here.
-  explain the pronunciation of antipode here.
-  explain the pronunciation of antipode here.
-  explain the pronunciation of antipode here.
-  explain the pronunciation of antipode here.
-  explain the pronunciation of antipode here.
-  explain the pronunciation of antipode here.
+  popup.innerHTML = `
+  <h2>THE PRONUNCIATION</h2>
+  <h3>Antipode</h3>
+  <h3>Antipodes</h3>
+  <h2>ANTIPODAL CITIES</h2>
+  <ul>
+  <li>Christchurch (New Zealand) — A Coruña (Spain)</li>
+  <li>Levin (New Zealand) - Ávila (Spain)</li>
+  <li>Hamilton (New Zealand) — Córdoba (Spain)</li>
+  <li>Hong Kong — La Quiaca (Argentina)</li>
+  <li>Lianyungang (China) — Junín (Argentina)</li>
+  <li>Madrid (Spain) — Weber (New Zealand)</li>
+  </ul>
+  <h2>Read more on Wikipedia...<h2>
+  <h3>No, you can't dig to China.</h3>
   `
   document.body.append(popup);
 

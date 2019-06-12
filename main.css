@@ -4,6 +4,7 @@ html, body {
   padding: 0;
   background: pink;
   color: white;
+  cursor: crosshair;
   font-family: 'Ultra', serif;
 }
 body {
@@ -17,18 +18,26 @@ nav {
   text-align: center;
 }
 nav:hover {
+  animation: navslide;
+  animation-iteration-count: 1;
+  animation-duration: 0.7s;
   background-color: black;
-  color: grey;
+  color: pink;
 }
 
 #popup {
   background-color: rgba(0,0,0,0.7);
-  height:100vh;
-  width:100vw;
-  position:fixed;
-  top:0;
-  right:0;
-  z-index:10;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+#popup ul li {
+  list-style-type: none;
 }
 
 .wrapper {
@@ -80,8 +89,8 @@ button {
   font-family: 'Ultra', serif;
 }
 button:hover {
-  background: pink;
-  color: white;
+  background: black;
+  color: pink;
 }
 
 #exp {
@@ -143,3 +152,16 @@ background: red;
     transform: scaleX(1.1) scaleY(1.1);
   }
 }
+
+@keyframes slidein {
+  0%{
+    opacity:0;
+    transform:translateX(800px);
+  }
+  100%{
+    opacity:1;
+    transform: transalteX(0);
+  }
+}
+
+
