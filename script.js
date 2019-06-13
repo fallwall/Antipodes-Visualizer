@@ -26,7 +26,7 @@ button.addEventListener("click", async () => {
       return lng + 180;
     }
   }
-  console.log(lng, lat);
+
   antlat = -lat;            //antipode's latitude
   antlng = lngConvert(lng); //antipode's longitude 
   //below: second API call from antipodes' coordinates;
@@ -101,8 +101,7 @@ nav.addEventListener("click", () => {
   popup.setAttribute("id", "popup");
   popup.innerHTML = `
   <br>
-  <br>
-  <br>
+  
   <h2>THE PRONUNCIATION</h2>
   <h3><a href="https://www.dictionary.com/browse/antipode">Antipode Antipodes</a></h3>
   <h2>ANTIPODAL CITIES</h2>
