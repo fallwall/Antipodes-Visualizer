@@ -169,8 +169,8 @@ button:hover {
   }
 
 
-  /*media query*/
-  @media (max-width: 800px) {
+  /* media query #1 */
+  @media (max-width: 480px) {
     body, html {
       overflow:visible;
     }
@@ -185,6 +185,46 @@ button:hover {
     }
     #input-section {
       display: block;
+    }
+
+  }
+
+  /* media query #2 */
+  @media (max-width: 768px) { 
+    body, html {
+      overflow:visible;
+    }
+    .wrapper {
+      width: 100%;
+    }
+    nav, #exp img {
+      display: none;
+    }
+    input {
+      width: 200px;
+    }
+    #input-section {
+      display: block;
+    }
+    #popup h2 {
+      font-size: 20px;
+    }
+
+  }
+
+  /* media query #3 */
+  @media (max-width: 1220px) {
+    .wrapper {
+      width: 100%;
+    }
+    input {
+      width: 300px;
+    }
+    #input-section {
+      display: block;
+    }
+    #popup h2 {
+      font-size: 20px;
     }
 
   }
