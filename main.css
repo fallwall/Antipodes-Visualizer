@@ -12,6 +12,7 @@ body {
   display: flex;
 }
 
+/* nav and popup, non-mobile only*/
 nav {
   height: 100vh;
   width: 5%;
@@ -19,13 +20,10 @@ nav {
   text-align: center;
 }
 nav:hover {
-  animation: navslide;
-  animation-iteration-count: 1;
-  animation-duration: 0.7s;
   background-color: black;
   color: pink;
+  transition: background-color 0.7s 0.5s;
 }
-
 
 #popup {
   background-color: rgba(0,0,0,0.7);
@@ -37,29 +35,31 @@ nav:hover {
   z-index: 10;
   text-align: center;
   letter-spacing: 0.2em;
+  animation: slidein;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
 }
-
 #popup h2 {
   font-size: 30px;
 }
-
 #popup ul li {
   list-style-type: none;
 }
-
 #popup a {
   text-decoration: none;
   color: white;
 }
-
 #popup a:hover {
   color: pink;
 }
 
+/* wrapper: input + output */
 .wrapper {
   width: 95%;
 }
-/*map here*/
+/*output: map here*/
 #map {
   width: 100%;
   height: 60%;
@@ -106,14 +106,15 @@ button {
   font-family: 'Ultra', serif;
 }
 button:hover {
-  background: black;
+  background-color: black;
   color: pink;
+  transition: background-color 0.7s 0.5s; 
 }
 
+/* output: search result */
 #exp {
   font-size: 20px;
 }
-
 #exp img {
   width: 120px;
   height: auto;
@@ -124,15 +125,7 @@ button:hover {
   animation-timing-function: linear;
 }
 
-.creditbox a {
-    text-decoration: none;
-    color:black;
-  }
-.creditbox a:hover {
-    color:white;
-}
 
-  
 /* button animation */
 @keyframes buttonmov {
   0%{
@@ -163,10 +156,21 @@ button:hover {
       transform: tranlateY(-20px) rotate(0deg)
     }
   }
+/* animation for the popup */
+  @keyframes slidein {
+    0%{
+      opacity:0;
+      transform:translateX(800px);
+    }
+    100%{
+      opacity:1;
+      transform: transalteX(0);
+    }
+  }
 
 
   /*media query*/
-  @media (max-width: 450px) {
+  @media (max-width: 800px) {
     body, html {
       overflow:visible;
     }
