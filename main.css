@@ -11,7 +11,6 @@ html, body {
 body {
   display: flex;
 }
-
 /* nav and popup, non-mobile only*/
 nav {
   height: 100vh;
@@ -54,7 +53,6 @@ nav:hover {
 #popup a:hover {
   color: pink;
 }
-
 /* wrapper: input + output */
 .wrapper {
   width: 95%;
@@ -124,7 +122,6 @@ button:hover {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
 
 /* button animation */
 @keyframes buttonmov {
