@@ -88,7 +88,7 @@ button.addEventListener("click", async () => {
       },
       "layout": {
         "icon-image": "cat",
-        "icon-size": 0.1
+        "icon-size": 0.2
       }
     });
   });
