@@ -42,7 +42,7 @@ nav:hover {
   animation-delay: 0.5s;
 }
 #popup h2 {
-  font-size: 1rem;
+  font-size: 30px;
 }
 #popup ul li {
   list-style-type: none;
@@ -92,7 +92,7 @@ input {
   padding: 5px;
   box-shadow:5px 2.5px 2.5px grey;
   width: 400px;
-  font-size: 1rem;
+  font-size: 20px;
   font-family: 'Ultra', serif;
 }
 button {
@@ -101,7 +101,7 @@ button {
   border-radius: 5px;
   box-shadow: 5px 2.5px 2.5px grey;
   padding: 5px;
-  font-size: 1rem;
+  font-size: 20px;
   animation: buttonmov 1s ease-out .8s;
   font-family: 'Ultra', serif;
 }
@@ -209,7 +209,7 @@ button:hover {
   }
 
   /* media query #3 */
-  @media (max-width: 1240px) {
+  @media (max-width: 1200px) {
     .wrapper {
       width: 100%;
     }
@@ -218,5 +218,8 @@ button:hover {
     }
     #input-section {
       display: block;
+    }
+    #popup h2 {
+      font-size: 1rem;
     }
   }
